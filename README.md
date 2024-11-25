@@ -32,7 +32,7 @@ user=%7B%22id%22%3A308131758%2C%22first_name%22%3A%22ALEX%22%2C%22last_name%22%3
 ```
 2. secret_key = HMAC_SHA256(<bot_token>, "WebAppData"), toHex(secret_key)为以下的值
 ```
-d9f6d12ff126c9020b28941621cbd3b6a2bc4008633bab7885661f18ea8af8eb
+23f3ec0513be85259be200f933b7305593080e18cc5ea1eda5b76b0ed671b6d7
 ```
 3. 可参照资料telegram mini app
 
