@@ -26,15 +26,22 @@
     }
 }
 ```
-5. 其中tg_init_data为下列数据，其中少了个字段，请将其补全。
+5. 正确数据示例
+```json
+{
+    "init_data":"user=%7B%22id%22%3A308131758%2C%22first_name%22%3A%22ALEX%22%2C%22last_name%22%3A%22IVANNIKOV.PRO%22%2C%22username%22%3A%22ivannikovPro%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%7D&chat_instance=-1857114464680496286&chat_type=private&auth_date=1716232213&hash=cec1997f626a15aae970a2da7deb83cb7e45136af1551a8a885dac60424361dc"
+    
+}
+```
+6. tg_init_data为下列数据，其中少了个字段，请将其补全。
 ```
 user=%7B%22id%22%3A308131758%2C%22first_name%22%3A%22ALEX%22%2C%22last_name%22%3A%22IVANNIKOV.PRO%22%2C%22username%22%3A%22ivannikovPro%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%7D&chat_instance=-1857114464680496286&chat_type=private&auth_date=1716232213
 ```
-2. secret_key = HMAC_SHA256(<bot_token>, "WebAppData"), toHex(secret_key)为以下的值
+7. secret_key = HMAC_SHA256(<bot_token>, "WebAppData"), toHex(secret_key)为以下的值
 ```
 23f3ec0513be85259be200f933b7305593080e18cc5ea1eda5b76b0ed671b6d7
 ```
-3. 可参照资料telegram mini app
+8. 可参照资料telegram mini app
 
 ## 以下为一个solana链上应用接口，
 文件的idl里定义了这些方法。
