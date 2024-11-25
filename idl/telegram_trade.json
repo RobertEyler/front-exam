@@ -1,0 +1,1118 @@
+{
+  "address": "7xTZh6UsjVSBR15fb7DXLe3ZabyBRCGcpup6bwfqxwhe",
+  "metadata": {
+    "name": "telegram_trade",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "pumpfun_buy",
+      "discriminator": [
+        85,
+        186,
+        137,
+        192,
+        218,
+        119,
+        94,
+        155
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true
+        },
+        {
+          "name": "fee_recipient",
+          "writable": true
+        },
+        {
+          "name": "mint",
+          "writable": true
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true
+        },
+        {
+          "name": "associated_user",
+          "writable": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "rent"
+        },
+        {
+          "name": "event_authority"
+        },
+        {
+          "name": "program",
+          "writable": true
+        },
+        {
+          "name": "rebate_p1",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_person",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_rebate_pda",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_rebate_token_account",
+          "optional": true
+        },
+        {
+          "name": "fee_state",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  97,
+                  116,
+                  101
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        },
+        {
+          "name": "platform_sol",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  111,
+                  114,
+                  101,
+                  45,
+                  109,
+                  111,
+                  110,
+                  101,
+                  121
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "params",
+          "type": {
+            "defined": {
+              "name": "BuyParams"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "pumpfun_sell",
+      "discriminator": [
+        1,
+        11,
+        73,
+        123,
+        73,
+        10,
+        251,
+        90
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true
+        },
+        {
+          "name": "fee_recipient",
+          "writable": true
+        },
+        {
+          "name": "mint",
+          "writable": true
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true
+        },
+        {
+          "name": "associated_user",
+          "writable": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "associated_token_program",
+          "writable": true
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "event_authority"
+        },
+        {
+          "name": "program",
+          "writable": true
+        },
+        {
+          "name": "rebate_p1",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_person",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_rebate_pda",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "one_time_rebate_token_account",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "fee_state",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  97,
+                  116,
+                  101
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        },
+        {
+          "name": "platform_sol",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  111,
+                  114,
+                  101,
+                  45,
+                  109,
+                  111,
+                  110,
+                  101,
+                  121
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "params",
+          "type": {
+            "defined": {
+              "name": "SellParams"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "raydium_base_swap_out",
+      "discriminator": [
+        130,
+        153,
+        130,
+        168,
+        194,
+        223,
+        189,
+        247
+      ],
+      "accounts": [
+        {
+          "name": "amm_program",
+          "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
+        },
+        {
+          "name": "amm",
+          "writable": true
+        },
+        {
+          "name": "amm_authority",
+          "writable": true
+        },
+        {
+          "name": "amm_open_orders",
+          "writable": true
+        },
+        {
+          "name": "amm_target_orders",
+          "writable": true
+        },
+        {
+          "name": "amm_coin_vault",
+          "writable": true
+        },
+        {
+          "name": "amm_pc_vault",
+          "writable": true
+        },
+        {
+          "name": "market_program"
+        },
+        {
+          "name": "market",
+          "writable": true
+        },
+        {
+          "name": "market_bids",
+          "writable": true
+        },
+        {
+          "name": "market_asks",
+          "writable": true
+        },
+        {
+          "name": "market_event_queue",
+          "writable": true
+        },
+        {
+          "name": "market_coin_vault",
+          "writable": true
+        },
+        {
+          "name": "market_pc_vault",
+          "writable": true
+        },
+        {
+          "name": "market_vault_signer",
+          "writable": true
+        },
+        {
+          "name": "user_token_source",
+          "writable": true
+        },
+        {
+          "name": "user_token_destination",
+          "writable": true
+        },
+        {
+          "name": "user_source_owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "rebate_p1",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_p4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_one_time",
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account2",
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account3",
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account4",
+          "optional": true
+        },
+        {
+          "name": "rebate_one_time_token_account",
+          "optional": true
+        },
+        {
+          "name": "fee_state",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  97,
+                  116,
+                  101
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        },
+        {
+          "name": "platform_token_account",
+          "writable": true
+        },
+        {
+          "name": "one_time_rebate_pda",
+          "optional": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": [
+        {
+          "name": "max_amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "raydium_swap_base_in",
+      "discriminator": [
+        148,
+        4,
+        92,
+        188,
+        225,
+        88,
+        170,
+        130
+      ],
+      "accounts": [
+        {
+          "name": "amm_program",
+          "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
+        },
+        {
+          "name": "amm",
+          "writable": true
+        },
+        {
+          "name": "amm_authority",
+          "writable": true
+        },
+        {
+          "name": "amm_open_orders",
+          "writable": true
+        },
+        {
+          "name": "amm_target_orders",
+          "writable": true
+        },
+        {
+          "name": "amm_coin_vault",
+          "writable": true
+        },
+        {
+          "name": "amm_pc_vault",
+          "writable": true
+        },
+        {
+          "name": "market_program"
+        },
+        {
+          "name": "market",
+          "writable": true
+        },
+        {
+          "name": "market_bids",
+          "writable": true
+        },
+        {
+          "name": "market_asks",
+          "writable": true
+        },
+        {
+          "name": "market_event_queue",
+          "writable": true
+        },
+        {
+          "name": "market_coin_vault",
+          "writable": true
+        },
+        {
+          "name": "market_pc_vault",
+          "writable": true
+        },
+        {
+          "name": "market_vault_signer",
+          "writable": true
+        },
+        {
+          "name": "user_token_source",
+          "writable": true
+        },
+        {
+          "name": "user_token_destination",
+          "writable": true
+        },
+        {
+          "name": "user_source_owner",
+          "signer": true
+        },
+        {
+          "name": "rebate_p1",
+          "optional": true
+        },
+        {
+          "name": "rebate_p2",
+          "optional": true
+        },
+        {
+          "name": "rebate_p3",
+          "optional": true
+        },
+        {
+          "name": "rebate_p4",
+          "optional": true
+        },
+        {
+          "name": "rebate_one_time",
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account2",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account3",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_token_account4",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "rebate_one_time_token_account",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "fee_state",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  101,
+                  101,
+                  45,
+                  115,
+                  116,
+                  97,
+                  116,
+                  101
+                ]
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                127,
+                32,
+                235,
+                252,
+                7,
+                202,
+                253,
+                37,
+                53,
+                217,
+                243,
+                21,
+                252,
+                233,
+                198,
+                230,
+                93,
+                223,
+                189,
+                106,
+                190,
+                223,
+                172,
+                168,
+                30,
+                228,
+                97,
+                102,
+                33,
+                197,
+                241,
+                240
+              ]
+            }
+          }
+        },
+        {
+          "name": "platform_token_account",
+          "writable": true
+        },
+        {
+          "name": "one_time_rebate_pda",
+          "writable": true,
+          "optional": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": [
+        {
+          "name": "amount_in",
+          "type": "u64"
+        },
+        {
+          "name": "amount_out",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "FeeState",
+      "discriminator": [
+        63,
+        224,
+        16,
+        85,
+        193,
+        36,
+        235,
+        220
+      ]
+    },
+    {
+      "name": "OneTimeRebate",
+      "discriminator": [
+        103,
+        215,
+        168,
+        173,
+        73,
+        76,
+        181,
+        56
+      ]
+    },
+    {
+      "name": "RebatePerson",
+      "discriminator": [
+        243,
+        35,
+        188,
+        14,
+        220,
+        51,
+        170,
+        164
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InvalidInput",
+      "msg": "Invalid input"
+    },
+    {
+      "code": 6001,
+      "name": "LoadAccountError",
+      "msg": "Load account error"
+    },
+    {
+      "code": 6002,
+      "name": "PriceNotFound",
+      "msg": "Price not found"
+    }
+  ],
+  "types": [
+    {
+      "name": "BuyParams",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "one_time_rebate_tg_id",
+            "type": {
+              "option": "u64"
+            }
+          },
+          {
+            "name": "one_time_nonce",
+            "type": {
+              "option": "u64"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "max_sol_cost",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FeeState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "first_rate",
+            "type": "u64"
+          },
+          {
+            "name": "second_rate",
+            "type": "u64"
+          },
+          {
+            "name": "third_rate",
+            "type": "u64"
+          },
+          {
+            "name": "rebate_rate",
+            "type": "u64"
+          },
+          {
+            "name": "one_time_rate",
+            "type": "u64"
+          },
+          {
+            "name": "swap_exchange_rate",
+            "type": "u64"
+          },
+          {
+            "name": "authority",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OneTimeRebate",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner_rebate_person",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RebatePerson",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "top",
+            "type": {
+              "option": "pubkey"
+            }
+          },
+          {
+            "name": "tgid",
+            "type": "u64"
+          },
+          {
+            "name": "withdraw_authority",
+            "type": {
+              "option": "pubkey"
+            }
+          },
+          {
+            "name": "one_time_nonce",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SellParams",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "one_time_rebate_tg_id",
+            "type": {
+              "option": "u64"
+            }
+          },
+          {
+            "name": "one_time_nonce",
+            "type": {
+              "option": "u64"
+            }
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "min_sol_output",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ]
+}
