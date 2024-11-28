@@ -65,7 +65,7 @@ user=%7B%22id%22%3A308131758%2C%22first_name%22%3A%22ALEX%22%2C%22last_name%22%3
 1. @coral-xyz/anchor 0.30.1
 ### 参数
 1. pairId (对应idl里的amm)
-2. ammAuthority
+2. ammAuthority 固定值
 3. ammOpenOrders
 4. pcMint (币1) 
 5. coinMint (币2)
