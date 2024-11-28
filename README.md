@@ -55,7 +55,7 @@ user=%7B%22id%22%3A308131758%2C%22first_name%22%3A%22ALEX%22%2C%22last_name%22%3
 7. 涉及到的pda地址的seed为[tgid]
 
 ## 以下为一个solana的rpc链上接口
-1. 成功能接swapBaseIn接口，执行一条购买
+1. 成功接通raydiumSwapBaseIn接口，执行一条购买
 2. 为Option的可全填为null
 3. 后台链的地址也是和上面一样
 ### 逻辑
